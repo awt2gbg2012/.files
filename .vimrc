@@ -13,9 +13,10 @@ set bs=2
 let mapleader = ','
 
 " Quicksave command
-" noremap <C-s> :update<CR>
-" vnoremap <C-s> <C-C>:update<CR>
-" inoremap <C-s> <C-O>:update<CR>
+" Disable terminal flow control: 'stty -ixon'
+noremap <C-s> :update<CR>
+vnoremap <C-s> <C-C>:update<CR>
+inoremap <C-s> <C-O>:update<CR>
 
 " Faster tab movement
 map <Leader>n <esc>:tabprevious<CR>
@@ -47,7 +48,7 @@ set tw=79
 set nowrap
 set fo-=t
 set colorcolumn=80
-highlight ColorColumn ctermbg=233
+highlight colorcolumn ctermbg=888
 
 " History settings
 set history=700
@@ -121,6 +122,6 @@ inoremap <silent>k <C-R>=OmniPopup('k')<CR>
 
 " Settings for Python folding
 " mkdir -p ~/.vim/ftplugin
-" wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/script.php?script_id=1494
-"" set nofoldenable
+" wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/script.php?src_id=1494
+set nofoldenable
 
