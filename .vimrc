@@ -47,8 +47,8 @@ set number
 set tw=79
 set nowrap
 set fo-=t
-set colorcolumn=80
-highlight colorcolumn ctermbg=888
+set cc=80
+highlight ColorColumn ctermbg=red
 
 " History settings
 set history=700
