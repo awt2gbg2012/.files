@@ -128,6 +128,10 @@ set nofoldenable
 " Settings for NERDtree
 " cd ~/.vim/bundle
 " git clone https://github.com/scrooloose/nerdtree.git
+" To Setup rope for new project:
+"   * [vim] :RopeOpenProject
+"   * if using venv: [vim] :e .ropeproject/config.py
+"   * if using venv: set virtual environment
 map <F2> <ESC>:NERDTreeToggle<CR>
 let NERDTreeDirArrows=0
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
