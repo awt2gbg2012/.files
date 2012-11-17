@@ -11,6 +11,11 @@ export PAGER
 LC_ALL=sv_SE.ISO8859-1
 export LC_ALL
 
+# start keychain
+keychain id_rsa
+. .keychain/FBFB-sh
+# end keychain
+
 #function parse_git_branch {
 #ref=$(git-symbolic-ref HEAD 2> /dev/null) || return
 #  echo "("${ref#refs/heads/}")"
