@@ -47,8 +47,8 @@ set number
 set tw=79
 set nowrap
 set fo-=t
-set cc=80
-highlight ColorColumn ctermbg=red
+set colorcolumn=80
+highlight colorcolumn ctermbg=darkred
 
 " History settings
 set history=700
@@ -125,3 +125,9 @@ inoremap <silent>k <C-R>=OmniPopup('k')<CR>
 " wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/script.php?src_id=1494
 set nofoldenable
 
+" Settings for NERDtree
+" cd ~/.vim/bundle
+" git clone https://github.com/scrooloose/nerdtree.git
+map <F2> <ESC>:NERDTreeToggle<CR>
+let NERDTreeDirArrows=0
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
