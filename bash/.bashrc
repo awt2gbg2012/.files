@@ -10,6 +10,8 @@ PAGER=more
 export PAGER
 LC_ALL=sv_SE.ISO8859-1
 export LC_ALL
+EDITOR=vim
+export EDITOR
 
 # start keychain
 keychain id_rsa
