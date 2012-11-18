@@ -1,0 +1,9 @@
+[user]
+	name = JonDow
+	email = jon@dow.com
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[mergetool]
+	prompt = false
