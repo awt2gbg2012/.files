@@ -1,0 +1,6 @@
+setxkbmap se &
+exec aterm -tr -trsb -sh 30 -g 80x12+0-20 &
+exec aterm -tr -trsb -sh 30 -g 110x26+0+0 &
+exec aterm -tr -trsb -sh 30 -name gitterm &
+exec opera &
+exec fluxbox
