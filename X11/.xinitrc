@@ -5,4 +5,4 @@ exec aterm -tr -trsb -sh 30 -g 30x38-0+0 -name todo &
 exec aterm -tr -trsb -sh 30 -name gitterm &
 exec aterm -tr -trsb -sh 30 -name miscterm &
 exec opera &
-exec ssh-agent fluxbox
+exec fluxbox
